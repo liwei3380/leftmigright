@@ -12,7 +12,7 @@ var init = function () {
         jsApiList:['onMenuShareTimeline','onMenuShareAppMessage'],
         title:'title',
         desc:'description',
-        link:'http://www.baidu.com',
+        link:'http://www.linki2u.com/wxjstxt/leftmidright/dist/dao.html',
         imgurl:'http://y2.ifengimg.com/a/2016_05/add96b5b01c902d.jpg',
         callback:cb
       });

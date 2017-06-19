@@ -31,7 +31,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      time: 10,
+      time: 30,
       score: 0,
       objDownY: -105,
       objDownDY: 0,
@@ -206,7 +206,7 @@ export default {
       vm.si = setInterval(function(){
           if(vm.time >= 1){
             vm.time -= 1
-            if (vm.time <= 9 && !vm.wran) {
+            if (vm.time <= 10 && !vm.wran) {
               vm.wran = true
             }
           } else {
@@ -214,7 +214,7 @@ export default {
             vm.gameover = true
             vm.wran = false
             sessionStorage.setItem('score',vm.score)
-            //vm.$router.push('/over')
+            vm.$router.push('/over')
           }
         },1000)
   }
